@@ -12,7 +12,7 @@ int main()
 
     // Динамически выделяем память под
     // хранение массива размера size
-    int *a = new int[size];
+    unsigned char *a = new unsigned char[size];
     
     // Считываем массив
     for (int i = 0; i < size; i++)
@@ -32,7 +32,7 @@ int main()
                     //чем элемент находящийся на расстоянии шага
                     {
                         //меняем их местами
-                        int temp = a[j];
+                        unsigned char temp = a[j];
                         a[j] = a[j + step];
                         a[j + step] = temp;
                         j--; 
